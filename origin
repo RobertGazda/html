@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+function send(){
+
+console.log({"type":"test"})
+	window.parent.postMessage(JSON.stringify({"type":"test"}), "*")
+}
+function sendo(){
+
+console.log({"type":"test"})
+	window.parent.postMessage(JSON.stringify({"type":"test"}), "https://sprint.b2.int.gnb.pl")
+}
+</script>
+<button class="postMessage" onclick="send()">test</button>
+<button class="postMessage" onclick="sendo()">origin</button>
+fdsfgdsgdsg dsgdsg sdr ghs
+</body>
+</html>
